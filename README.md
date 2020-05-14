@@ -18,3 +18,12 @@ Supervisan nuestra aplicación, recopilan métricas, comprenden y analizan el tr
 Los Actuators se utilizan principalmente para exponer información operacional sobre nuestra aplicación en ejecución (health, metrics, info, dump, env, etc.)
 
 # ¿Cómo se instala?
+
+Validar que venga en el pom.xml, de lo contrario agregarlo.
+
+```
+<dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+```
