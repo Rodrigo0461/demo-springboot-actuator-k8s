@@ -32,4 +32,27 @@ Validar que venga en el pom.xml, de lo contrario agregarlo.
 
 Kubernetes tienes 2 formas de healthcheck para validar el status de nuestros pods.
 
-# LIVENESS PROBE / READINESS PROBE
+# LIVENESS PROBE / READINESS PROBE CON ACTUATORS DE SPRING BOOT
+
+El pod esta vivo ??
+
+```
+livenessProbe:
+     httpGet:
+       path: /actuator/health
+       port: 8080
+     initialDelaySeconds: 30
+     periodSeconds: 20
+     timeoutSeconds: 30
+```
+El pod esta ready ??
+
+```
+readinessProbe:
+     httpGet:
+        path: /actuator/health
+        port: 8080
+     initialDelaySeconds: 30
+     periodSeconds: 20
+     timeoutSeconds: 30
+```
