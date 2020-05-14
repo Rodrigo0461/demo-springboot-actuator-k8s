@@ -77,4 +77,8 @@ Request al respectivo endpoint
 ```
  curl localhost:8080/actuator/health | jq
 ```
+Validar el detalle del Pod (Ver si liveness y readiness probe presentan problemas)
+```
+kubectl describe pod demo-xxxxxxx
+```
 
