@@ -6,7 +6,7 @@ Spring Boot Actuators K8S (Liveness Probe / Readiness Probe)
 
  [Minikube](https://kubernetes.io/es/docs/tasks/tools/install-minikube/) - Para tener un cluster k8s LOCAL
 
-Install Minikube en MacOS
+Instalar Minikube en MacOS
 
 ```
 brew install minikube
