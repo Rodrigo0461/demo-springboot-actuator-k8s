@@ -27,3 +27,9 @@ Validar que venga en el pom.xml, de lo contrario agregarlo.
        <artifactId>spring-boot-starter-actuator</artifactId>
 </dependency>
 ```
+
+# K8S y los Actuator's
+
+Kubernetes tienes 2 formas de healthcheck para validar el status de nuestros pods.
+
+# LIVENESS PROBE / READINESS PROBE
