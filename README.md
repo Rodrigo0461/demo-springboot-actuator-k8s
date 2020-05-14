@@ -73,3 +73,8 @@ Habilitar port-forward
 ```
 kubectl port-forward svc/demo 8080:8080
 ```
+Request al respectivo endpoint
+```
+ curl localhost:8080/actuator/health | jq
+```
+
