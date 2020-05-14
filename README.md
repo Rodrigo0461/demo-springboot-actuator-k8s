@@ -65,3 +65,11 @@ _Para hacer el deploy se usara la imagen de spring **springguides/demo**_
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 ```
+Validar recursos
+```
+kubectl get all
+```
+Habilitar port-forward
+```
+kubectl port-forward svc/demo 8080:8080
+```
