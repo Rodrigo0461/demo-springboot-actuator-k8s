@@ -56,3 +56,12 @@ readinessProbe:
      periodSeconds: 20
      timeoutSeconds: 30
 ```
+
+# INSTALAR DEMO
+
+_Para hacer el deploy se usara la imagen de spring **springguides/demo**_
+
+```
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+```
