@@ -11,3 +11,10 @@ Instalar Minikube en MacOS
 ```
 brew install minikube
 ```
+
+# Spring Boot Actuator's
+
+Supervisan nuestra aplicación, recopilan métricas, comprenden y analizan el tráfico y el estado de nuestra base de datos, y todo ello sin falta de tener que implementarlo por nuestra cuenta.
+Los Actuators se utilizan principalmente para exponer información operacional sobre nuestra aplicación en ejecución (health, metrics, info, dump, env, etc.)
+
+# ¿Cómo se instala?
