@@ -59,18 +59,16 @@ readinessProbe:
 
 # INSTALAR DEMO
 
-_Para hacer el deploy se usara la imagen de spring **springguides/demo**_
-
+Setear entorno k8s con [Kubectx + Kubens](https://github.com/ahmetb/kubectx)
 ```
 # Switch to context Minukube
 kubectx minikube
 ```
-
 ```
 # Switch to test namespace
 kubens test
 ```
-
+_Para hacer el deploy se usara la imagen de spring **springguides/demo** que se encuentra en deployment.yaml_
 ```
 kubectl apply -f k8s/deployment.yaml
 kubectl apply -f k8s/service.yaml
