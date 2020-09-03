@@ -62,8 +62,18 @@ readinessProbe:
 _Para hacer el deploy se usara la imagen de spring **springguides/demo**_
 
 ```
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
+# Switch to context Minukube
+kubectx minikube
+```
+
+```
+# Switch to test namespace
+kubens test
+```
+
+```
+kubectl apply -f k8s/deployment.yaml
+kubectl apply -f k8s/service.yaml
 ```
 Validar recursos
 ```
@@ -79,6 +89,6 @@ Request al respectivo endpoint
 ```
 Validar el detalle del Pod (Ver si liveness y readiness probe presentan problemas)
 ```
-kubectl describe pod demo-xxxxxxx
+kubectl describe pod demo-xxxxxxx | grep -i Liveness -A 1
 ```
 
